@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>
+        My First Survey form
+    </title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email<input id="email" type="email" required placeholder="Enter your email"></label>
+        <label id="number-label">Age<span class="clue">(optional)</span><input id="number" min="18" max="100"
+                placeholder="Enter your age" type="number"></label>
+        <label for="dropdown">How often do you bicycle?</label>
+                        <select id="dropdown" name="biking_frequency">
+                            <option disabled selected value="">Please choose an option</option>
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Professional">Professional</option>
+                        </select>
+        <label id="radio">Would you recommend freeCodeCamp to a friend?<span class="clue">(required)</span>
+            <label><input name="user-recommend" value="definitely" type="radio"
+                    class="user-recommend">Definitely</label>
+            <label><input name="user-recommend" value="maybe" type="radio" class="user-recommend">Maybe</label>
+            <label><input name="user-recommend" value="not-sure" type="radio" class="user-recommend">Not sure</label>
+        </label>
+        <label id="checkbox">What is your favorite feature of freeCodeCamp?<span class="clue">(check all that
+                apply)</span>
+            <label><input value="challenges" type="checkbox" class="user-checkbox">Challenges</label>
+            <label><input value="projects" type="checkbox" class="user-checkbox">Projects</label>
+            <label><input value="community" type="checkbox" class="user-checkbox">Community</label>
+            <label><input value="open-source" type="checkbox" class="user-checkbox">Open Source</label>
+        </label>
+        <label id="textarea">Any comments or suggestions?<textarea id="comments"
+                placeholder="Enter your comment here..."></textarea></label>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+
+</html>
